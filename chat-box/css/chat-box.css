@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Helvetica Neue","Helvetica","Arial",Sans-Serif;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* CSS3 flexible box*/
+.h-box{
+    display:-moz-box;
+    display:-webkit-box;
+    display:box;
+    -webkit-box-orient: horizontal;
+}
+.v-box{
+    display:-moz-box;
+    display:-webkit-box;
+    display:box;
+    -webkit-box-orient: vertical;
+}
+.full-flex{
+    -moz-box-flex:1;
+    -webkit-box-flex:1;
+    box-flex:1;
+}
+
+#android {
+	height: 100%;
+	width: 100%;
+}
+
+.y-wrapper{
+	height: 100%;
+	width: 100%;
+}
+
+.header {
+	height: 70px;
+	background-color: #333744;
+}
+
+.talk-to {
+	font: bold arial,sans-serif;
+	color: #FFF;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+#bubbles {
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: #1E212A;
+}
+
+/* bubbles */
+.bubble-wrapper {
+	/* min height */
+	min-height: 80px;
+	height: auto !important;
+	height: 80px;
+	
+	/* background-color: #808080; */
+	padding: 10px;
+}
+
+.gravatar {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: solid 4px;
+	border-color: white;
+	/* margin: 10px; */
+	background-image: url(../img/head-sculpture/john80_80.jpg);
+}
+
+.dialogue-wrapper {
+	margin-left: 96px;
+	/* width: 250; */
+	margin-top: 3px;
+}
+
+.triangle {
+    /* background-color: #F50; */
+    width: 0;
+    height: 0;
+    margin-top: 18px;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #2C303E;
+    border-bottom: 8px solid transparent;
+}
+
+.dialogue {
+	/* color: #FFF; */
+	min-height: 22px;
+	height: auto !important;
+	height: 22px;
+	
+	min-width: 20px;
+	max-width: 250px;
+	display: inline-block;
+	
+	margin: 10px 0px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #2C303E;
+}
+
+.dialogue > p {
+	color: #FFF;
+	word-wrap: break-word;
+}
+
+.time {
+	text-align: center;
+	color: #FFF;
+	font-size: 14px;
+}
+
+.footer {
+	height: 58px;
+	background-color: #515D6C;
+}
+
+#bottom-wrapper {
+	padding-top: 10px;
+	height: 35px;
+}
+
+#diff-chat-type {
+	width: 35px;
+	margin: 0px 9px;
+	border-radius: 50%;
+	background-color: #FF6F67;
+}
+
+#text-box {
+	font-size: 20px;
+	height: 100%;
+	border: solid 0px;
+	border-radius: 5px;
+	display: block;
+}
+
+#send-button {
+	font-size: 20px;
+	color: white;
+	background-color: #FF6F67;
+	width: 65px;
+	margin: 0px 9px;
+	border: solid 0px;
+	border-radius: 5px;
+	display: block;
+}
+
+/* flip horizontall */
+.flipx {
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    /*IE*/
+    filter:FlipH;
+}

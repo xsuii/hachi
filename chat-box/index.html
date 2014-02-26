@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>chat box</title>
+	<!-- 'user-scalable' supported on android -->
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/chat-box.css" />
+	<script src="lib/jquery-1.9.1.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<div id="android">
+		<div class="y-wrapper v-box">
+			<div class="v-box full-flex">
+				<div class="header">
+					<div class="talk-to">
+						<p>Watson</p>
+					</div>
+				</div>
+				<div id="bubbles" class="full-flex">
+					<div class="bubble-wrapper">
+						<div class="gravatar left"></div>
+						<div class="dialogue-wrapper">
+							<div class="triangle left"></div>
+							<div class="dialogue">
+								<p>Sherlock, do you have lunch? Sherlock, do you have lunch? 
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="time">
+						<p>4.12pm, March 18th 2013</p>
+					</div>
+					<div class="bubble-wrapper flipx">
+						<div class="gravatar left flipx"></div>
+						<div class="dialogue-wrapper">
+							<div class="triangle left"></div>
+							<div class="dialogue flipx">
+								<p>.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div id="bottom-wrapper" class="h-box">
+					<div id="diff-chat-type"></div>
+					<div class="h-box full-flex">
+						<input type="text" id="text-box" class="full-flex"/>
+						<button id="send-button">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
